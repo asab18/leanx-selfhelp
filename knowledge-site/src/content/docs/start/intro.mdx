@@ -4,7 +4,6 @@ sidebar:
  order: 1
 ---
 import { LinkButton } from '@astrojs/starlight/components';
-// import { ExternalButton } from '../../../components';
 
 ## What is LeanX?
 We bring together everything that's necessary to build a good online business, from accepting payment, sending money nationwide or selling products in the internet. Lean.x's product suite empower all type of businesses, whether it is an online e-commerce business or a giant internet corporation, long established businesses or newly registered businesses.
@@ -21,7 +20,13 @@ We serve the best transaction rates and the lowest in the market, giving your bu
 
 Get started now and enjoy the benefits of an efficient and secure payment system with zero setup fees!
 
-{/* <ExternalButton href="https://www.leanx.io/cloud-payment">Learn More about Cloud Payment</ExternalButton> */}
+<LinkButton
+ href="https://www.leanx.io/cloud-payment"
+ variant="secondary"
+ icon="external"
+ iconPlacement="start">
+ Learn More about Cloud Payment
+</LinkButton>
 
 ### Payment Link
 Payment Link is a prebuilt, hosted payment page optimized for online conversion.
@@ -30,5 +35,23 @@ Whether you offer one-time purchases or free-to-enter-amount type of donation, u
 
 Get started now and enjoy the benefits of an efficient and secure payment system via Payment Link with zero setup fees.
 
-### Payout
+<LinkButton
+ href="https://www.leanx.io/payment-link"
+ variant="secondary"
+ icon="external"
+ iconPlacement="start">
+ Learn More about Payment Link
+</LinkButton>
 
+### Payout
+Payout allows businesses to quickly and easily transfer funds to any bank account using our secure and convenient platform. By automating financial operations and streamlining payment processes, our payout service helps businesses save time and increase effciency.
+
+Payout also supports real-time payouts, ensuring the fastest and most efficient way to transfer funds. We also include a notification service and a reporting dashboard to always keep you updated and on track with your transactions.
+
+<LinkButton
+ href="https://www.leanx.io/payout"
+ variant="secondary"
+ icon="external"
+ iconPlacement="start">
+ Learn More about Payout
+</LinkButton>
