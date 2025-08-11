@@ -7,10 +7,8 @@ import tailwindcss from '@tailwindcss/vite';
 export default defineConfig({
   integrations: [
       starlight({
-          title: 'Leanx Ultimate Guide',
-		  customCss: [
-			'./src/styles/global.css'
-		  ],
+          title: 'Leanx Documentation',
+		  customCss: ['./src/styles/global.css'],
           sidebar: [
               {
                   label: 'Getting Started',

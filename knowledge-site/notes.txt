@@ -57,3 +57,64 @@ import { Card, CardGrid } from '@astrojs/starlight/components';
 		{ label: 'Email Verification & Security Tips', slug: 'setup/email' },
 	],
 },
+
+
+
+
+<table>
+    <tr>
+        <th style="width: max-content;">Methods</th>
+        <th style="width: 100%;">Providers</th>
+    </tr>
+    <tr>
+        <td rowspan="16">Online Banking</td>
+        <td>Maybank</td>
+    </tr>
+    <tr>
+        <td>Public Bank</td>
+    </tr>
+    <tr>
+        <td>Affin Bank</td>
+    </tr>
+    <tr>
+        <td>CIMB Bank</td>
+    </tr>
+    <tr>
+        <td>Bank Islam</td>
+    </tr>
+    <tr>
+        <td>AmBank</td>
+    </tr>
+    <tr>
+        <td>Alliance Bank</td>
+    </tr>
+    <tr>
+        <td>Bank Rakyat</td>
+    </tr>
+    <tr>
+        <td>UOB Bank</td>
+    </tr>
+    <tr>
+        <td>OCBC Bank</td>
+    </tr>
+    <tr>
+        <td>Bank Muamalat</td>
+    </tr>
+    <tr>
+        <td>HSBC Bank</td>
+    </tr>
+    <tr>
+        <td>RHB Bank</td>
+    </tr>
+    <tr>
+        <td>Standard Chartered</td>
+    </tr>
+    <tr>
+        <td>BSN</td>
+    </tr>
+    <tr>
+        <td>Hong Leong Bank</td>
+    </tr>
+
+</table>
+

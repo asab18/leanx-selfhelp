@@ -1,0 +1,36 @@
+---
+const basePath = '/public/finance/banks';
+const banks = [
+    { name: 'Affin Bank', file: 'Affin.svg'},
+    { name: 'Alliance Bank', file: 'Alliance.svg'},
+    { name: 'AmBank', file: 'AmBank.svg'},
+    { name: 'Bank Islam', file: 'BankIslam.svg'},
+    { name: 'Bank Rakyat', file: 'BankRakyat.svg'},
+    { name: 'BSN', file: 'BSN.svg'},
+    { name: 'CIMB', file: 'CIMB.svg'},
+    { name: 'Hong Leong Bank', file: 'HongLeong.svg'},
+    { name: 'HSBC Bank', file: 'HSBC.svg'},
+    { name: 'Maybank', file: 'Maybank.svg' },
+    { name: 'Bank Muamalat', file: 'Muamalat.svg'},
+    { name: 'OCBC Bank', file: 'OCBC.svg'},
+    { name: 'Public Bank', file: 'PublicBank.svg'},
+    { name: 'RHB Bank', file: 'RHB.svg'},
+    { name: 'Standard Chartered Bank', file: 'StandardChartered.svg'},
+    { name: 'UOB Bank', file: 'UOB.svg'},
+];
+
+// add dark mode logos
+---
+
+<div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6 p-4">
+    {banks.map(bank => (
+        <div class="flex flex-col items-center">
+            <img
+            src={`${basePath}/${bank.file}`}
+            alt={bank.name} 
+            class="h-[120px] w-auto"
+            />
+        </div>
+    ))}
+</div>
+

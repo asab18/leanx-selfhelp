@@ -4,33 +4,19 @@
 @import 'tailwindcss/theme.css' layer(theme);
 @import 'tailwindcss/utilities.css' layer(utilities);
 
-
 @theme {
-    /* 
-    purple theme
-    --color-accent-50:  #f3f1fa;
-    --color-accent-100: #e2ddf4;
-    --color-accent-200: #c6bfe8;
-    --color-accent-300: #aa9fdb;
-    --color-accent-400: #9488ce;
-    --color-accent-500: #8272B3; 
-    --color-accent-600: #6e5fa1;
-    --color-accent-700: #5a4d8c;
-    --color-accent-800: #493c77;
-    --color-accent-900: #352b5f;
-    --color-accent-950: #231c47; */
 
     /* cyan theme */
-    --color-accent-50:  #effcfd;
-    --color-accent-100: #d6f6f8;
-    --color-accent-200: #b1eaef;
-    --color-accent-300: #8cdee5;
-    --color-accent-400: #6cd3db;
-    --color-accent-500: #5EC6CC;
-    --color-accent-600: #3ea5aa;
-    --color-accent-700: #2b8388;
-    --color-accent-800: #21686d;
-    --color-accent-900: #1c5559;
-    --color-accent-950: #0e363a; 
+    --color-accent-50:  #edfafa;
+    --color-accent-100: #d5f3f4;
+    --color-accent-200: #ace6e9;
+    --color-accent-300: #82d9dd;
+    --color-accent-400: #66d0d4;
+    --color-accent-500: #5FC7CD;
+    --color-accent-600: #4aa7ad;
+    --color-accent-700: #3a8489;
+    --color-accent-800: #2f686d;
+    --color-accent-900: #285659;
+    --color-accent-950: #153234;
 
 }
