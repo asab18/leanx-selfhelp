@@ -1,0 +1,19 @@
+---
+const basePath = '/finance/cards'
+const cards = [
+    { name: 'Visa', file: 'Visa.svg'},
+    { name: 'Mastercard', file: 'Mastercard.svg'},
+];
+---
+
+<div class="tabs-grid">
+    {cards.map(card => (
+        <div class="tabs-card">
+            <img
+            src={`${basePath}/${card.file}`}
+            alt={card.name} 
+            class="tabs-imgs" 
+            />
+        </div>
+    ))}
+</div>

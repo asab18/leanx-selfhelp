@@ -5,7 +5,6 @@
 @import 'tailwindcss/utilities.css' layer(utilities);
 
 @theme {
-
     /* cyan theme */
     --color-accent-50:  #edfafa;
     --color-accent-100: #d5f3f4;
@@ -18,5 +17,25 @@
     --color-accent-800: #2f686d;
     --color-accent-900: #285659;
     --color-accent-950: #153234;
+}
 
+@layer components {
+    .tabs-grid {
+        @apply columns-1 sm:columns-2 md:columns-3 lg:columns-4 gap-6 p-4
+    }
+
+    .tabs-card {
+        @apply flex flex-col items-center bg-white rounded-lg p-3 shadow-sm transition-all duration-400 ease-out;
+        break-inside: avoid;
+        width: 100%;
+        margin-bottom: 1.5rem;
+    }
+
+    .tabs-card:hover {
+        @apply -translate-y-2 shadow-lg
+    }
+
+    .tabs-imgs {
+        @apply h-[120px] w-[auto]
+    }
 }

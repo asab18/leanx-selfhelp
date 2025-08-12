@@ -12,31 +12,37 @@ export default defineConfig({
           sidebar: [
               {
                   label: 'Getting Started',
-                  autogenerate: { directory: 'start' }
+                  autogenerate: { directory: 'start' },
               },
               {
                   label: 'Account Setup',
                   autogenerate: { directory: 'setup' },
+                  collapsed: true,
               },
               {
                   label: 'Integration Guide',
-                  autogenerate: { directory: 'integration' }
+                  autogenerate: { directory: 'integration' },
+                  collapsed: true,
               },
               {
                   label: 'Transaction Flow',
-                  autogenerate: { directory: 'flow' }
+                  autogenerate: { directory: 'flow' },
+                  collapsed: true,
               },
               {
                   label: 'Compliance & Security',
-                  autogenerate: { directory: 'security' }
+                  autogenerate: { directory: 'security' },
+                  collapsed: true,
               },
               {
                   label: 'FAQs',
-                  autogenerate: { directory: 'faq' }
+                  autogenerate: { directory: 'faq' },
+                  collapsed: true,
               },
               {
                   label: 'Support & Resources',
-                  autogenerate: { directory: 'resource' }
+                  autogenerate: { directory: 'resource' },
+                  collapsed: true,
               },
           ],
       }),
