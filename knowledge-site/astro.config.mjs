@@ -13,6 +13,7 @@ export default defineConfig({
               {
                   label: 'Getting Started',
                   autogenerate: { directory: 'start' },
+                  collapsed: true,
               },
               {
                   label: 'Account Setup',
@@ -20,13 +21,18 @@ export default defineConfig({
                   collapsed: true,
               },
               {
-                  label: 'Integration Guide',
-                  autogenerate: { directory: 'integration' },
-                  collapsed: true,
+                label: 'Dashboard',
+                autogenerate: { directory: 'dashboard' },
+                collapsed: true,
               },
               {
                   label: 'Transaction Flow',
                   autogenerate: { directory: 'flow' },
+                  collapsed: true,
+              },
+              {
+                  label: 'Integration Guide',
+                  autogenerate: { directory: 'integration' },
                   collapsed: true,
               },
               {
@@ -36,12 +42,11 @@ export default defineConfig({
               },
               {
                   label: 'FAQs',
-                  autogenerate: { directory: 'faq' },
-                  collapsed: true,
+                  slug: 'faq',
               },
               {
                   label: 'Support & Resources',
-                  autogenerate: { directory: 'resource' },
+                  autogenerate: { directory: 'support' },
                   collapsed: true,
               },
           ],
