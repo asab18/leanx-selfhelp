@@ -21,7 +21,7 @@ export default defineConfig({
                   collapsed: true,
               },
               {
-                label: 'Dashboard',
+                label: 'Merchant Portal ',
                 autogenerate: { directory: 'dashboard' },
                 collapsed: true,
               },
