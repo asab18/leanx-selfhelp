@@ -1,22 +1,74 @@
 ---
 title: Pricing & Packages
+slug: packages
 sidebar:
  order: 2
 ---
+import { Tabs, TabItem } from '@astrojs/starlight/components';
+import EmptySection from '../../../components/ui/EmptySection.astro';
+
 LeanX offers two types of packages - Basic and Standard. All businesses grow at a unique pace. Thus, we've designed our pricing structure to be compatible with businesses of all shapes and sizes, from fresh start-ups to booming mid-sizers to large enterprises.
 
-<table>
+{/* TODO fill in description */}
+## Choosing Your Package
+See the descriptions below to have a better idea of which package perfectly aligns to your organisational needs!
+
+<Tabs>
+    <TabItem label='Basic Package'>
+        <EmptySection />
+    </TabItem>
+
+    <TabItem label='Standard Package'>
+        <EmptySection />
+    </TabItem>
+</Tabs> 
+
+{/* TODO redesign table, await assets (cdn) */}
+## Package Offers
+Here's a side by side comparison of the Basic package against the Standard package!
+{/* 
+<table class='w-full text-center'>
     <tr>
-        <th>Header</th>
-        <th>Description</th>
+        <th></th>
+        <th></th>
+        <th>Basic Package</th>
+        <th>Standard Package</th>
     </tr>
     <tr>
-        <td>Samples</td>
-        <td>Another sample</td>
+        <td rowspan='3'>Membership Package</td>
+        <td>Membership Target</td>
+        <td>Annual Fee</td>
+        <td>Support</td>
+    </tr>
+    <tr>
+        <td>Membership Target</td>
+        <td>Annual Fee</td>
+        <td>Support</td>
+    </tr>
+    <tr>
+        <td>Membership Target</td>
+        <td>Annual Fee</td>
+        <td>Support</td>
     </tr>
 </table>
+ */}
 
 
-## Basic Package
-
-## Standard Package
+ <table class='text-center'>
+    <tr>
+        <th></th>
+        <th class='text-center'>Basic Package</th>
+        <th class='text-center'>Standard Package</th>
+    </tr>
+    <tr>
+        <td></td>
+        <td colspan='2' class='text-center'>Membership Package</td>
+        {/* <td></td>
+        <td></td> */}
+    </tr>
+    <tr>
+        <td>Membership Package</td>
+        <td>Basic Choice of Payments</td>
+        <td>Advance Choice of Payment Channels with Additional Payout Service</td>
+    </tr>
+ </table>

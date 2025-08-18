@@ -2,12 +2,13 @@
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
 import tailwindcss from '@tailwindcss/vite';
+import remarkExternalLinks from 'remark-external-links';
 
 // https://astro.build/config
 export default defineConfig({
   integrations: [
       starlight({
-          title: 'Leanx Documentation',
+          title: 'Leanx Self-help',
           head: [
             {
                 tag: 'meta',
@@ -64,5 +65,15 @@ export default defineConfig({
 
   vite: {
     plugins: [tailwindcss()],
+  },
+
+  markdown: {
+    remarkPlugins: [
+        // @ts-ignore
+        [remarkExternalLinks, {
+            target: '_blank',
+            rel: ['noopener', 'noreferrer'],
+        }]
+    ],
   },
 });

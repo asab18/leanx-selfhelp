@@ -1,5 +1,6 @@
 ---
 title: Supported Regions, Currencies & Payment Methods
+slug: supported-regions-currencies-payment-methods
 sidebar:
  order: 3
 ---
@@ -9,20 +10,22 @@ import Cards from '../../../components/lists/Cards.astro';
 import EmptySection from '../../../components/ui/EmptySection.astro';
 
 ## Regions
-The only region currently supported is __Malaysia__. 
+The only region currently supported is 🇲🇾 Malaysia. 
 
 :::note
-Companies based outside of Malaysia are still able to register for Leanx, with the condition of being legally registered in Malaysia via Companies Commission of Malaysia / Suruhanjaya Syarikat Malaysia (SSM). Click <a href="https://www.ssm.com.my/Pages/Home.aspx" target="_blank" rel="noopener">here</a> to register your business!
+Companies based outside of Malaysia are still able to register for Leanx, with the condition of being legally registered in Malaysia via Companies Commission of Malaysia / Suruhanjaya Syarikat Malaysia (SSM). Click [here](https://www.ssm.com.my/Pages/Home.aspx) to register your business!
 :::
 
 ## Currencies
 The only currency currently supported is the 🇲🇾 Malaysian Ringgit (MYR).
 
 ## Payment Methods
-We supported the following payment methods.
+
+### Receiving Payments
+Your business will receive payments via [Cloud Payment](/introduction/#cloud-payment). Customers can pay to you using the list of supported payment methods below. 
 
 {/* TODO double check content in tabs */}
-{/* TODO ewallets, bnpl, crypto - await assets from uiux */}
+{/* TODO ewallets, bnpl, crypto - await assets */}
 <Tabs>
     <TabItem label="Online Banking">
         <Banks />
@@ -42,6 +45,19 @@ We supported the following payment methods.
     </TabItem>
 
     <TabItem label="Crypto"> 
+        <EmptySection />
+    </TabItem>
+</Tabs>
+
+### Making Payments
+Your business can send out payments to any bank account using [Payout](/introduction/#payout). These are the supported payment methods for both your business and the payment receipients.
+
+<Tabs>
+    <TabItem label="Online Banking">
+        <Banks />
+    </TabItem>
+
+    <TabItem label="E-Wallets"> 
         <EmptySection />
     </TabItem>
 </Tabs>

@@ -5,18 +5,25 @@
 @import 'tailwindcss/utilities.css' layer(utilities);
 
 @theme {
-    /* cyan theme */
+    /* cyan theme - for night mode */
     --color-accent-50:  #edfafa;
     --color-accent-100: #d5f3f4;
     --color-accent-200: #ace6e9;
     --color-accent-300: #82d9dd;
     --color-accent-400: #66d0d4;
     --color-accent-500: #5FC7CD;
-    --color-accent-600: #4aa7ad;
-    --color-accent-700: #3a8489;
-    --color-accent-800: #2f686d;
-    --color-accent-900: #285659;
-    --color-accent-950: #153234;
+    
+    /* purple theme -  for day mode */
+    --color-accent-600: #7460a8;
+    --color-accent-700: #64529b;
+    --color-accent-800: #524580;
+    --color-accent-900: #443b68;
+    --color-accent-950: #2a2446;
+
+    /* yellow accents - tertiary colors */
+    --color-yellow-400: #ffce33;
+    --color-yellow-500: #f59e0b;
+    --color-yellow-600: #d97706;
 }
 
 @layer components {
