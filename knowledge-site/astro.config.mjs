@@ -8,6 +8,15 @@ export default defineConfig({
   integrations: [
       starlight({
           title: 'Leanx Documentation',
+          head: [
+            {
+                tag: 'meta',
+                attrs: {
+                    name: 'google-site-verification',
+                    content: 'yrLJA1pSt1ty2eXZJtCTe5_5PQxDV1XhAqlKV3q1cVc'
+                }
+            }
+          ],
 		  customCss: ['./src/styles/global.css'],
           sidebar: [
               {
@@ -22,7 +31,7 @@ export default defineConfig({
               },
               {
                 label: 'Merchant Portal ',
-                autogenerate: { directory: 'dashboard' },
+                autogenerate: { directory: 'portal' },
                 collapsed: true,
               },
               {
