@@ -1,20 +1,97 @@
 ---
 title: Frequently Asked Questions (FAQs)
 ---
+import { Steps } from '@astrojs/starlight/components';
+import SupportMail from '../../components/email/SupportMail.astro';
+
 These are some of the most frequently asked questions about our products.
+
+{/* TODO supportemail provider function */}
 
 ## Onboarding & Account Issues
 
 <details>
-    <summary>I&apos;m having trouble signing up</summary>
-    content ...
+    <summary>How do I register as a new merchant?</summary>
+    Complete your sign up through the Onboarding registration page [here](https://onboard.leanx.io/register) and upload your required documents. Refer to the [registration steps](/registration-steps/) for an in-depth step-by-step-guide during your registration.
 </details>
 
 <details>
-    <summary>I can&apos;t login to my dashboard</summary>
-    content ...
+    <summary>What documents are required for merchant registration?</summary>
+    1. A soft copy of your company&apos;s SSM certification
+    2. A soft copy of the director&apos;s identification card
+    3. A soft copy of your latest bank statement
 </details>
+
+<details>
+    <summary>How long does account approval take?</summary>
+    Account approval usually takes 3 to 4 working days. If you have **not** heard from us for longer than that, please reach out to us! Click <SupportMail label="here" subject="Support Request: My account hasn't been approved" body={`Hi Leanx team, \n\n I've registered for a Leanx Merchant, but I haven't gotten my approval. My details are as follows: \n\n`} /> to see how to contact us.
+</details>
+
+<details>
+    <summary>Can I register as an individual or do I need a company?</summary>
+    You will need to have a registered company (either Enterprise or Sdn. Bhd.) as we only make settlements to company bank accounts.
+</details> 
+
+<details>
+    <summary>How do I update my business or contact details?</summary>
+    {/* TODO complete content */}
+    content
+</details> 
+
+<details>
+    <summary>Can I have multiple merchant accounts under one business?</summary>
+    No, each business can only register for 1 merchant account.
+</details> 
+
+<details>
+    <summary>I forgot my password, what do I do?</summary>
+    <Steps>
+        1. **Access Forgot Password Page**
+           
+           Click on "Forgot Password" at the [Login](https://portal.leanpay.my/login) page. Alternatively, you may also click [here](https://portal.leanpay.my/forgot-password) to access the page directly.
+
+        2. **Enter Email**
+
+           This must be the email you used to register your account.
+
+        3. **Send the Form**
+
+           The send button is at the end of the form. After sending, you will receive a recovery link in your email.
+
+        4. **Open Recovery Email**
+           
+           Open the email and follow the instructions as stated to set a new password.
+    </Steps>
+
+    :::tip
+    If you do not receive the recovery email within a few minutes, check your spam/junk folder or [contact our support team](/contact-us/).
+    :::
+</details> 
+
+<details>
+    <summary>Is there a monthly or annual maintenance fee?</summary>
+    {/* TODO incomplete answer */}
+    Yes, we charge any monthly or annual maintenance fees.
+</details> 
+
+<details>
+    <summary></summary>
+    content
+</details> 
+
+
 
 ## Developer & Integration Issues
 
 ## Transaction Issues
+
+
+
+
+
+{/* FOR COPYING
+<details>
+    <summary></summary>
+    content
+</details> 
+*/}

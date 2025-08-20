@@ -4,6 +4,8 @@ import starlight from '@astrojs/starlight';
 import tailwindcss from '@tailwindcss/vite';
 import remarkExternalLinks from 'remark-external-links';
 
+// TODO debug safari issues 
+
 // https://astro.build/config
 export default defineConfig({
   integrations: [
