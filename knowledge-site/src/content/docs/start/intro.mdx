@@ -4,13 +4,31 @@ slug: introduction
 sidebar:
  order: 1
 ---
-import { LinkButton } from '@astrojs/starlight/components';
+import { LinkButton, Card, CardGrid } from '@astrojs/starlight/components';
+import { BRANDING } from '../../../constants';
 
-## What is Leanx?
-Leanx is Malaysia's technology-focused next-generation unified payment platform, built to make business payments smarter and simpler. Whether you're accepting online payments, sending payouts across the country, or launching a no-cost e-commerce store, Leanx's powerful suite offers seamless integration through APIs and plugins, a rich real-time dashboard, and low-cost transactional services. With Leanx, businesses can effortlessly manage billing, storefronts, invoicing, and payouts with optimized efficiency and transparency. 
+## What is Lean.x?
+Lean.x is Malaysia's technology-focused next-generation unified payment platform, built to make business payments smarter and simpler. Whether you're accepting online payments, sending payouts across the country, or launching a no-cost e-commerce store, Lean.x's powerful suite offers seamless integration through APIs and plugins, a rich real-time dashboard, and low-cost transactional services. With Lean.x, businesses can effortlessly manage billing, storefronts, invoicing, and payouts with optimized efficiency and transparency. 
 
-## Leanx Products
-Leanx offers a powerful suite of payment tools designed to help businesses grow with ease. The three core products - Cloud Payment, Payment Links and Payout - work together to streamline transactions, boost efficiency, and enhance customer experience. The combination of robust API infrastructure, user-friendly interfaces, and advanced automation tools help businesses efficiently manage their entire payment ecosystem from a single, secure platform. Whether you&apos;re starting small or scaling rapidly, these products give you everything you need to manage payments and billing. 
+## The Lean.x Ecosystem 
+These are the entities crucial to the Lean.x ecosystem.
+
+<CardGrid stagger>
+    <Card title="Merchants">
+        Merchants refer to the businesses and organisations that use Lean.x to manage their business.
+    </Card>
+
+    <Card title="Merchant Portal">
+        The Merchant Portal refers to the suite that merchants are able to access as {BRANDING.leanx} users.
+    </Card>
+
+    <Card title="Clients">
+        Clients refer to customers or buyers of the merchants.
+    </Card>
+</CardGrid>
+
+## Lean.x Products
+Lean.x offers a powerful suite of payment tools designed to help businesses grow with ease. The three core products - **Cloud Payment, Payment Links and Payout** - work together to streamline transactions, boost efficiency, and enhance customer experience. The combination of robust API infrastructure, user-friendly interfaces, and advanced automation tools help businesses efficiently manage their entire payment ecosystem from a single, secure platform. Whether you&apos;re starting small or scaling rapidly, these products give you everything you need to manage payments and billing. 
 
 ### Cloud Payment
 Cloud Payment is a comprehensive payment processing platform that serves as the foundation for online and in-person retailers, subscription businesses, software platforms, and marketplaces. 
@@ -20,12 +38,13 @@ We serve the best transaction rates and the lowest in the market, giving your bu
 Get started now and enjoy the benefits of an efficient and secure payment system with zero setup fees!
 
 <LinkButton
- href="https://www.Leanx.io/cloud-payment"
- variant="secondary"
- icon="external"
- iconPlacement="start"
- target="_blank">
- Learn More about Cloud Payment
+    href="https://www.Lean.x.io/cloud-payment"
+    variant="secondary"
+    icon="external"
+    iconPlacement="start"
+    target="_blank"
+>
+    Learn More about Cloud Payment
 </LinkButton>
 
 ### Payment Link
@@ -36,12 +55,13 @@ Whether you offer one-time purchases or free-to-enter-amount type of donation, u
 Get started now and enjoy the benefits of an efficient and secure payment system via Payment Link with zero setup fees.
 
 <LinkButton
- href="https://www.Leanx.io/payment-link"
- variant="secondary"
- icon="external"
- iconPlacement="start"
- target="_blank">
- Learn More about Payment Link
+    href="https://www.Lean.x.io/payment-link"
+    variant="secondary"
+    icon="external"
+    iconPlacement="start"
+    target="_blank"
+>
+    Learn More about Payment Link
 </LinkButton>
 
 ### Payout
@@ -50,10 +70,11 @@ Payout allows businesses to quickly and easily transfer funds to any bank accoun
 Payout also supports real-time payouts, ensuring the fastest and most efficient way to transfer funds. We also include a notification service and a reporting dashboard to always keep you updated and on track with your transactions.
 
 <LinkButton
- href="https://www.Leanx.io/payout"
- variant="secondary"
- icon="external"
- iconPlacement="start"
- target="_blank">
- Learn More about Payout
+    href="https://www.Lean.x.io/payout"
+    variant="secondary"
+    icon="external"
+    iconPlacement="start"
+    target="_blank"
+>
+    Learn More about Payout
 </LinkButton>

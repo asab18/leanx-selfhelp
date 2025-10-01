@@ -4,71 +4,109 @@ slug: packages
 sidebar:
  order: 2
 ---
-import { Tabs, TabItem } from '@astrojs/starlight/components';
+import { Tabs, TabItem, Card, CardGrid } from '@astrojs/starlight/components';
 import EmptySection from '../../../components/ui/EmptySection.astro';
 
-LeanX offers two types of packages - Basic and Standard. All businesses grow at a unique pace. Thus, we've designed our pricing structure to be compatible with businesses of all shapes and sizes, from fresh start-ups to booming mid-sizers to large enterprises.
+Lean.x offers two types of packages - Basic and Standard. All businesses grow at a unique pace. Thus, we've designed our pricing structure to be compatible with businesses of all shapes and sizes, from fresh start-ups to booming mid-sizers to large enterprises.
 
 {/* TODO fill in description */}
 ## Choosing Your Package
 See the descriptions below to have a better idea of which package perfectly aligns to your organisational needs!
 
 <Tabs>
-    <TabItem label='Basic Package'>
-        <EmptySection />
+    <TabItem label='Lite'>
+        ### Fees
+        <CardGrid>
+            <Card title="Setup Fee" icon="star">
+                Free
+            </Card>
+
+            <Card title="Annual Fee" icon="star">
+                Free
+            </Card>
+        </CardGrid>
+
+        ### Payment Channels & Transaction Fee Rates
+        <CardGrid>
+            <Card title="Online Banking">
+                <img src='/finance/online_banking/FPX.svg' alt='FPX Logo' />
+                B2C: RM1.50 <br/>
+                B2B: RM2.00
+            </Card>
+
+            <Card title="E-wallets">
+                <div className='columns-5'>
+                    <img src='/finance/ewallets/TNG.svg' alt='TNG Ewallet Logo' />
+                    <img src='/finance/ewallets/Boost.svg' alt='Boost Logo' />
+                    <img src='/finance/ewallets/GrabPay.svg' alt='GrabPay Logo' />
+                    <img src='/finance/ewallets/ShopeePay.svg' alt='ShopeePay Logo' />
+                </div>
+                
+                RM1.70
+            </Card>
+        </CardGrid>
+
+        ### Settlements
+        <CardGrid>
+            <Card title="Speed" icon="rocket">
+                Transaction Date + 1 Day
+            </Card>
+
+            <Card title="Availability" icon="rocket">
+                Everyday including **weekends and public holidays**
+            </Card>
+        </CardGrid>
     </TabItem>
 
-    <TabItem label='Standard Package'>
-        <EmptySection />
+    <TabItem label='Growth'>
+        ### Fees
+        <CardGrid>
+            <Card title="Setup Fee" icon="star">
+                RM250
+            </Card>
+
+            <Card title="Annual Fee" icon="star">
+                Free
+            </Card>
+        </CardGrid>
+
+        ### Payment Channels & Transaction Fee Rates
+        <CardGrid>
+            <Card title="Online Banking">
+                <img src='/finance/online_banking/FPX.svg' alt='FPX Logo' />
+                B2C: RM1.50 <br/>
+                B2B: RM2.00
+            </Card>
+
+            <Card title="E-wallets">
+                <div className='columns-5'>
+                    <img src='/finance/ewallets/TNG.svg' alt='TNG Ewallet Logo' />
+                    <img src='/finance/ewallets/Boost.svg' alt='Boost Logo' />
+                    <img src='/finance/ewallets/GrabPay.svg' alt='GrabPay Logo' />
+                    <img src='/finance/ewallets/ShopeePay.svg' alt='ShopeePay Logo' />
+                </div>
+                RM1.70
+            </Card>
+
+            <Card title="Cards">
+                <div className='columns-3'>
+                    <img src='/finance/cards/Visa.svg' alt='Visa Logo' className='h-[50px] w-auto' />
+                    <img src='/finance/cards/Mastercard.svg' alt='Mastercard Logo' className='h-[40px] w-auto'  />
+                </div>
+                
+                2.00%
+            </Card>
+        </CardGrid>
+
+        ### Settlements
+        <CardGrid>
+            <Card title="Speed" icon="rocket">
+                Transaction Date + 1 Day
+            </Card>
+
+            <Card title="Availability" icon="rocket">
+                Everyday including **weekends and public holidays**
+            </Card>
+        </CardGrid>
     </TabItem>
 </Tabs> 
-
-{/* TODO redesign table, logos, new prices */}
-## Package Offers
-Here's a side by side comparison of the Basic package against the Standard package!
-{/* 
-<table class='w-full text-center'>
-    <tr>
-        <th></th>
-        <th></th>
-        <th>Basic Package</th>
-        <th>Standard Package</th>
-    </tr>
-    <tr>
-        <td rowspan='3'>Membership Package</td>
-        <td>Membership Target</td>
-        <td>Annual Fee</td>
-        <td>Support</td>
-    </tr>
-    <tr>
-        <td>Membership Target</td>
-        <td>Annual Fee</td>
-        <td>Support</td>
-    </tr>
-    <tr>
-        <td>Membership Target</td>
-        <td>Annual Fee</td>
-        <td>Support</td>
-    </tr>
-</table>
- */}
-
-
- <table class='text-center'>
-    <tr>
-        <th></th>
-        <th class='text-center'>Basic Package</th>
-        <th class='text-center'>Standard Package</th>
-    </tr>
-    <tr>
-        <td></td>
-        <td colspan='2' class='text-center'>Membership Package</td>
-        {/* <td></td>
-        <td></td> */}
-    </tr>
-    <tr>
-        <td>Membership Package</td>
-        <td>Basic Choice of Payments</td>
-        <td>Advance Choice of Payment Channels with Additional Payout Service</td>
-    </tr>
- </table>

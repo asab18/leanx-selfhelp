@@ -7,13 +7,17 @@ sidebar:
 import { Tabs, TabItem } from '@astrojs/starlight/components';
 import Banks from '../../../components/lists/Banks.astro';
 import Cards from '../../../components/lists/Cards.astro';
+import Ewallets from '../../../components/lists/EWallets.astro';
 import EmptySection from '../../../components/ui/EmptySection.astro';
+import { BRANDING, MESSAGES } from '../../../constants';
 
 ## Regions
 The only region currently supported is 🇲🇾 Malaysia. 
 
 :::note
-Companies based outside of Malaysia are still able to register for Leanx, with the condition of being legally registered in Malaysia via Companies Commission of Malaysia / Suruhanjaya Syarikat Malaysia (SSM). Click [here](https://www.ssm.com.my/Pages/Home.aspx) to register your business!
+If your company is based outside of Malaysia, please reach out to our support team via 
+<a href={`mailto:${BRANDING.supportEmail}?${MESSAGES.emailIntlSupport}`} target='_blank'>Email</a> or
+<a href={`${BRANDING.supportPhone}?${MESSAGES.wsIntlSupport}`} target='_blank'>Whatsapp</a> for further guidance!
 :::
 
 ## Currencies
@@ -22,38 +26,44 @@ The only currency currently supported is the 🇲🇾 Malaysian Ringgit (MYR).
 ## Payment Methods
 
 ### Receiving Payments
-Your business will receive payments via [Cloud Payment](/introduction/#cloud-payment). Customers can pay to you using the list of supported payment methods below. 
-
-{/* TODO recheck content based on latest list */}
-{/* TODO ewallets, bnpl, crypto - await assets */}
+Merchants are able to receive payments from customers via these payment channels.
 <Tabs>
-    <TabItem label="Online Banking">
+    <TabItem label="FPX Online Banking">
         <Banks />
+    </TabItem>
+
+    <TabItem label="E-Wallets"> 
+        <Ewallets />
+    </TabItem>
+
+    <TabItem label="Cards">
+        This is available for **Growth subscribers only**. Both Debit and Credit cards are accepted.
+        <Cards />
+    </TabItem>
+</Tabs>
+
+### Receiving Settlements
+Merchants are able to receive settlements via these channels.
+<Tabs>
+    <TabItem label="FPX Online Banking">
+        <Banks />
+    </TabItem>
+
+    <TabItem label="E-Wallets"> 
+        <Ewallets />
     </TabItem>
 
     <TabItem label="Cards">
         Both Debit and Credit cards are accepted.
         <Cards />
     </TabItem>
-
-    <TabItem label="E-Wallets"> 
-        <EmptySection />
-    </TabItem>
-
-    <TabItem label="BNPL"> 
-        <EmptySection />
-    </TabItem>
-
-    <TabItem label="Crypto"> 
-        <EmptySection />
-    </TabItem>
 </Tabs>
 
-### Making Payments
-Your business can send out payments to any bank account using [Payout](/introduction/#payout). These are the supported payment methods for both your business and the payment receipients.
+### Sending Payouts
+Merchants are able to disburse Payout funds to these payment channels.
 
 <Tabs>
-    <TabItem label="Online Banking">
+    <TabItem label="FPX Online Banking">
         <Banks />
     </TabItem>
 

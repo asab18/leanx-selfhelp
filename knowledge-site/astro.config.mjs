@@ -10,7 +10,7 @@ import remarkExternalLinks from 'remark-external-links';
 export default defineConfig({
   integrations: [
       starlight({
-          title: 'Leanx Self-help',
+          title: 'Lean.x Self-help',
           head: [
             {
                 tag: 'meta',

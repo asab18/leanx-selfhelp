@@ -4,13 +4,28 @@ slug: contact-us
 sidebar: 
  order: 1
 ---
-import SupportMail from '../../../components/email/SupportMail.astro';
-
-{/* TODO supportemail provider function */}
+import { BRANDING, MESSAGES } from '../../../constants';
+import { Card, CardGrid, LinkButton } from '@astrojs/starlight/components';
 
 We&apos;re here to help you grow your business. If you have further questions and cant find the answers in this handbook, our team is ready to support you every step of the way. Reach out to us and we will respond promptly to ensure your experience is smooth and successful.
 
-:::note
-Email us at <SupportMail subject="Leanx Support Request " body={`Hi Leanx team, \n\n I need help with...`} /> for more info!
-:::
+<LinkButton
+    href={`mailto:${BRANDING.supportEmail}?${MESSAGES.emailSupport}`}
+    target='_blank'
+    variant='primary'
+    icon="email"
+    iconPlacement="start"
+>
+    Via Email
+</LinkButton>
+
+<LinkButton
+    href={`${BRANDING.supportPhone}?${MESSAGES.wsSupport}`}
+    target='_blank'
+    variant='primary'
+    icon="comment-alt"
+    iconPlacement="start"
+>
+    Via Whatsapp
+</LinkButton>
 

@@ -1,0 +1,21 @@
+---
+const basePath = '/finance/ewallets'
+const cards = [
+    { name: 'Boost', file: 'Boost.svg'},
+    { name: 'GrabPay', file: 'GrabPay.svg'},
+    { name: 'TNG Ewallet', file: 'TNG.svg'},
+    { name: 'ShopeePay', file: 'ShopeePay.svg'},
+];
+---
+
+<div class="tabs-grid">
+    {cards.map(card => (
+        <div class="tabs-card">
+            <img
+            src={`${basePath}/${card.file}`}
+            alt={card.name} 
+            class="tabs-imgs" 
+            />
+        </div>
+    ))}
+</div>
