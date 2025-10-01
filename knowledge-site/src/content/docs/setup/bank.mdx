@@ -4,37 +4,45 @@ slug: bank-linking
 sidebar:
  order: 3
 ---
-import { Steps, Icon } from '@astrojs/starlight/components';
+import { LinkButton, Aside } from '@astrojs/starlight/components';
+import { BRANDING, MESSAGES } from '../../../constants';
 
 {/* TODO double check if this information is accurate */}
 {/* TODO email function */}
 {/* TODO add how long this takes  */}
 
-## Current Account
-Your linked bank account for all transactions can be found on your [Dashboard](https://portal.leanpay.my/info/view) under `Accounts` <Icon name="right-caret" class="inline" /> `Info`. The bank account here is the same one you submitted during the onboarding process.
+## View Current Account
+You may view your current linked bank account for receiving settlements on your Dashboard under **Accounts > Info**.
 
 {/* TODO find steps to change linked account */}
-## Change Account 
-### Steps to Request Change
-Follow the steps below if you'd like to update your linked bank account.
+## Request Account Change  
+If you would like to change your linked bank account, click the button below. Our Support team will process your request and assist you further.
 
-<Steps>
+<Aside type='note' title='Please note that these are the required information that must be included and/or attached to the email or Whatsapp message.'>
+   <ol>
+      <li>Bank</li>
+      <li>Account Name</li>
+      <li>Account Number</li>
+      <li>Latest Bank Statement (Last 3 Months)</li>
+   </ol>
+</Aside>
 
-1. **Prepare Documents**
+<LinkButton
+    href={`mailto:${BRANDING.supportEmail}?${MESSAGES.emailCgBank}`}
+    target='_blank'
+    variant='primary'
+    icon="email"
+    iconPlacement="start"
+>
+   Request Via Email
+</LinkButton>
 
-   These are the documents that are required for this process. <br/>
-   i. New Bank Account Statement <br/>
-   ii. Authorisation Letter from Your Company 
-
-2. **Email Your Request**
-   
-   Send an email to (TO BE FILLED IN). The email **MUST** be sent using your merchant email.
-
-3. **Approval**
-   
-   Once our team has successfully verified and processed the change, you will receive a confirmation email stating the success of the process. 
-</Steps>
-
-{/* TODO email function */}
-### Request Not Approved
-If your request to change your linked bank account was **NOT** approved, please reach out to us via (TO BE FILLED IN)
+<LinkButton
+    href={`${BRANDING.supportPhone}?${MESSAGES.wsCgBank}`}
+    target='_blank'
+    variant='primary'
+    icon="comment-alt"
+    iconPlacement="start"
+>
+   Request Via Whatsapp
+</LinkButton>
