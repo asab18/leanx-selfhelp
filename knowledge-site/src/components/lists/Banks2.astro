@@ -1,7 +1,8 @@
 ---
-// Banks Group 1: Settlements & Payin
+// Banks Group 2: Payout
 const basePath = '/finance/banks';
 const banks = [
+  { name: 'AEON Bank', file: 'aeonbank.svg' },
   { name: 'Affin Bank', file: 'affinbank.svg' },
   { name: 'Agrobank', file: 'agrobank.svg' },
   { name: 'Alliance Bank', file: 'alliancebank.svg' },
@@ -9,23 +10,34 @@ const banks = [
   { name: 'AmBank', file: 'ambank.svg' },
   { name: 'Bank Islam', file: 'bankislam.svg' },
   { name: 'Bank Muamalat', file: 'bankmuamalat.svg' },
+  { name: 'Bank of America', file: 'bankofamerica.svg' },
   { name: 'Bank of China', file: 'bankofchina.svg' },
   { name: 'Bank Rakyat', file: 'bankrakyat.svg' },
   { name: 'BSN (Bank Simpanan Nasional)', file: 'bsn.svg' },
+  { name: 'BigPay', file: 'bigpay.svg' },
   { name: 'BNP Paribas', file: 'bnpparibas.svg' },
+  { name: 'Boost Bank', file: 'boostbank.svg' },
   { name: 'CIMB Bank', file: 'cimb.svg' },
   { name: 'Citibank', file: 'citibank.svg' },
   { name: 'Deutsche Bank', file: 'deutsche.svg' },
+  { name: 'GX Bank', file: 'gxbank.svg' },
   { name: 'Hong Leong Bank', file: 'hongleong.svg' },
   { name: 'HSBC Bank', file: 'hsbc.svg' },
+  { name: 'ICBC Bank', file: 'icbc.svg' },
+  { name: 'JP Morgan Chase', file: 'jpmorgan.svg' },
   { name: 'Kuwait Finance House', file: 'kfh.svg' },
   { name: 'Maybank', file: 'maybank.svg' },
+  { name: 'MBSB Bank', file: 'mbsb.svg' },
+  { name: 'Mizuho Bank', file: 'mizuho.svg' },
+  { name: 'MUFG Bank', file: 'mufg.svg' },
   { name: 'OCBC Bank', file: 'ocbc.svg' },
   { name: 'Public Bank', file: 'publicbank.svg' },
   { name: 'RHB Bank', file: 'rhb.svg' },
+  { name: 'SMBC Bank', file: 'smbc.svg' },
   { name: 'Standard Chartered Bank', file: 'standardchartered.svg' },
-  { name: 'UOB', file: 'uob.svg' },
+  { name: 'UOB Bank', file: 'uob.svg' },
 ];
+
 ---
 
 <div class="tabs-grid">
@@ -34,10 +46,8 @@ const banks = [
             <img
             src={`${basePath}/${bank.file}`}
             alt={bank.name} 
-            class="tabs-imgs"
             />
         </div>
-         
     ))}
 </div>
 

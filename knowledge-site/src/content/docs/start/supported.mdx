@@ -6,9 +6,9 @@ sidebar:
 ---
 import { Tabs, TabItem } from '@astrojs/starlight/components';
 import Banks from '../../../components/lists/Banks.astro';
+import Banks2 from '../../../components/lists/Banks2.astro';
 import Cards from '../../../components/lists/Cards.astro';
 import Ewallets from '../../../components/lists/EWallets.astro';
-import EmptySection from '../../../components/ui/EmptySection.astro';
 import { BRANDING, MESSAGES } from '../../../constants';
 
 ## Regions
@@ -52,11 +52,6 @@ Merchants are able to receive settlements via these channels.
     <TabItem label="E-Wallets"> 
         <Ewallets />
     </TabItem>
-
-    <TabItem label="Cards">
-        Both Debit and Credit cards are accepted.
-        <Cards />
-    </TabItem>
 </Tabs>
 
 ### Sending Payouts
@@ -64,10 +59,10 @@ Merchants are able to disburse Payout funds to these payment channels.
 
 <Tabs>
     <TabItem label="FPX Online Banking">
-        <Banks />
+        <Banks2 />
     </TabItem>
 
     <TabItem label="E-Wallets"> 
-        <EmptySection />
+        <Ewallets />
     </TabItem>
 </Tabs>
