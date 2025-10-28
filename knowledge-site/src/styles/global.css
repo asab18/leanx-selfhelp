@@ -42,4 +42,12 @@
     .tabs-imgs {
         @apply w-auto h-[60px]
     }
+
+    .table {
+        @apply max-w-full
+    }
+
+    .rows {
+        @apply w-auto
+    }
 }

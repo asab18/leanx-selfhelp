@@ -10,12 +10,13 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/mdx": "^4.3.6",
-    "@astrojs/react": "^4.3.1",
-    "@astrojs/starlight": "^0.35.2",
+    "@astrojs/mdx": "^4.3.8",
+    "@astrojs/react": "^4.4.0",
+    "@astrojs/starlight": "^0.36.1",
     "@astrojs/starlight-tailwind": "^4.0.1",
     "@tailwindcss/vite": "^4.1.11",
-    "astro": "^5.13.6",
+    "astro": "^5.15.1",
+    "lucide-astro": "^0.548.0",
     "remark-external-links": "^9.0.1",
     "sharp": "^0.34.2",
     "tailwindcss": "^4.1.11"

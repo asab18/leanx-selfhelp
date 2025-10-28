@@ -4,11 +4,54 @@ slug: dashboard-summary
 sidebar:
  order: 1
 ---
-{/* TODO recheck if revamping is needed */}
+import { Tabs, TabItem, Card, CardGrid } from '@astrojs/starlight/components';
+
 The Lean.x Dashboard is super-charged for your business management. The powerful real-time dashboard is equipped with detailed analytics which will enhance your ability to create effective high-quality strategic business decisions.
 
-## Sales Reports
+## Navigation Path
+`Dashboard`
 
-## 
+## Sales Reports
+The Dashboard provides a quick summary of your total sales and settlements over various time periods. It gives you a clear snapshot of your financial performance at a glance.
+
+{/* <CardGrid> */}
+    <Card title="Total Sales (All Time)">
+        Displays the cumulative amount of all recorded sales since your account was created.
+    </Card>
+
+    <Card title="Total Sales Today">
+        Shows the total sales recorded for the current day. This helps you monitor real-time daily performance. You may click on this card to see the sales breakdown by hour.
+    </Card>
+
+    <Card title="Total Sales Yesterday">
+        Displays the total amount of sales from the previous day, useful for comparing short-term performance trends. You may click on this card to see the sales breakdown by hour.
+    </Card>
+
+    <Card title="Total Sales (Last 7 Days)">
+        Summarizes your total sales over the past 7 days to help track weekly trends and fluctuations. You may click on this card to see the sales breakdown by date for the last 7 days.
+    </Card>
+
+    <Card title="Total Sales This Month">
+        Shows total sales for the current month. The accompanying mini bar chart visualizes sales activity within the month. You may click on this card to see the sales breakdown by date.
+    </Card>
+
+    <Card title="Total Sales Last Month">
+        Provides the total amount of sales from the previous month for performance comparison against the current period. You may click on this card to see the sales breakdown by date.
+    </Card>
+
+    <Card title="Total Sales This Year">
+        Displays total sales recorded since the beginning of the current year, offering a yearly overview of business performance. You may click on this card to see the sales breakdown by month.
+    </Card>
+
+    <Card title="Settlement (This Month)">
+        Shows the total amount of successful settlements for the current month. This figure may differ from total sales depending on pending or scheduled settlements. You may click on this card to go to the Settlements page.
+    </Card>
+{/* </CardGrid> */}
+
+## Recent Payments
+The Recent Payment section displays a detailed list of all the successful payments made by customers to your business. To see more details on Payments, click [here](/collections).
+
+## Recent Bills
+The Recent Bills section displays a detailed list of all the bills created. Bills are invoices that merchants send out to customers before they create a payment. To see more details on Collection Bills, click [here](/collections).
 
 
