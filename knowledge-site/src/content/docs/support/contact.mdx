@@ -4,13 +4,14 @@ slug: contact-us
 sidebar: 
  order: 1
 ---
-import { BRANDING, MESSAGES } from '../../../constants';
 import { Card, CardGrid, LinkButton } from '@astrojs/starlight/components';
+import { branding } from '../../../components/data/branding';
+import { messages } from '../../../components/data/messages';
 
 We&apos;re here to help you grow your business. If you have further questions and cant find the answers in this handbook, our team is ready to support you every step of the way. Reach out to us and we will respond promptly to ensure your experience is smooth and successful.
 
 <LinkButton
-    href={`mailto:${BRANDING.supportEmail}?${MESSAGES.emailSupport}`}
+    href={`mailto:${branding.supportEmail}?${messages.emailSupport}`}
     target='_blank'
     variant='primary'
     icon="email"
@@ -20,7 +21,7 @@ We&apos;re here to help you grow your business. If you have further questions an
 </LinkButton>
 
 <LinkButton
-    href={`${BRANDING.supportPhone}?${MESSAGES.wsSupport}`}
+    href={`${branding.supportPhone}?${messages.wsSupport}`}
     target='_blank'
     variant='primary'
     icon="comment-alt"

@@ -10,15 +10,16 @@ import BanksSettlement from '../../../components/lists/BanksSettlement.astro';
 import BanksPayout from '../../../components/lists/BanksPayout.astro';
 import Cards from '../../../components/lists/Cards.astro';
 import Ewallets from '../../../components/lists/EWallets.astro';
-import { BRANDING, MESSAGES } from '../../../constants';
+import { branding } from '../../../components/data/branding';
+import { messages } from '../../../components/data/messages';
 
 ## Regions
 The only region currently supported is 🇲🇾 Malaysia. 
 
 :::note
 If your company is based outside of Malaysia, please reach out to our support team via 
-<a href={`mailto:${BRANDING.supportEmail}?${MESSAGES.emailIntlSupport}`} target='_blank'>Email</a> or
-<a href={`${BRANDING.supportPhone}?${MESSAGES.wsIntlSupport}`} target='_blank'>Whatsapp</a> for further guidance!
+<a href={`mailto:${branding.supportEmail}?${messages.emailIntlSupport}`} target='_blank'>Email</a> or
+<a href={`${branding.supportPhone}?${messages.wsIntlSupport}`} target='_blank'>Whatsapp</a> for further guidance!
 :::
 
 ## Currencies

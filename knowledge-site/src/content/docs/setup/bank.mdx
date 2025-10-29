@@ -5,7 +5,8 @@ sidebar:
  order: 3
 ---
 import { LinkButton, Aside } from '@astrojs/starlight/components';
-import { BRANDING, MESSAGES } from '../../../constants';
+import { branding } from '../../../components/data/branding';
+import { messages } from '../../../components/data/messages';
 
 {/* TODO double check if this information is accurate */}
 {/* TODO email function */}
@@ -28,7 +29,7 @@ If you would like to change your linked bank account, click the button below. Ou
 </Aside>
 
 <LinkButton
-    href={`mailto:${BRANDING.supportEmail}?${MESSAGES.emailCgBank}`}
+    href={`mailto:${branding.supportEmail}?${messages.emailCgBank}`}
     target='_blank'
     variant='primary'
     icon="email"
@@ -38,7 +39,7 @@ If you would like to change your linked bank account, click the button below. Ou
 </LinkButton>
 
 <LinkButton
-    href={`${BRANDING.supportPhone}?${MESSAGES.wsCgBank}`}
+    href={`${branding.supportPhone}?${messages.wsCgBank}`}
     target='_blank'
     variant='primary'
     icon="comment-alt"

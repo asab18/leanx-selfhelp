@@ -5,7 +5,7 @@ sidebar:
  order: 1
 ---
 import { LinkButton, Card, CardGrid } from '@astrojs/starlight/components';
-import { BRANDING } from '../../../constants';
+import { branding } from '../../../components/data/branding';
 
 ## What is Lean.x?
 Lean.x is Malaysia's technology-focused next-generation unified payment platform, built to make business payments smarter and simpler. Whether you're accepting online payments, sending payouts across the country, or launching a no-cost e-commerce store, Lean.x's powerful suite offers seamless integration through APIs and plugins, a rich real-time dashboard, and low-cost transactional services. With Lean.x, businesses can effortlessly manage billing, storefronts, invoicing, and payouts with optimized efficiency and transparency. 
@@ -19,7 +19,7 @@ These are the entities crucial to the Lean.x ecosystem.
     </Card>
 
     <Card title="Merchant Portal">
-        The Merchant Portal refers to the suite that merchants are able to access as {BRANDING.leanx} users.
+        The Merchant Portal refers to the suite that merchants are able to access as {branding.leanx} users.
     </Card>
 
     <Card title="Clients">
