@@ -2,10 +2,12 @@
 import { logos } from '../data/logos';
 ---
 
+<!-- MISSING LOGOS: ALRAJHI, SUMITOMO (SMBC) & MBSB -->
 <div class="tabs-grid">
     {logos
     .filter((logo) => 
-    logo.display_type === "DISPLAYED_EWALLET")
+    logo.display_type === "DISPLAYED_BANK" 
+    && logo.payout == true)
     .map(logo => (
         <div class="tabs-card">
             <img
@@ -13,7 +15,7 @@ import { logos } from '../data/logos';
                 alt={logo.name}
                 width="auto"
                 height="auto"  
-                class="object-contain" 
+                class="object-contain"
             />
         </div>
          

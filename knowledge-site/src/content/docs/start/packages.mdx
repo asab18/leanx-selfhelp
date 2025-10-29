@@ -5,6 +5,7 @@ sidebar:
  order: 2
 ---
 import { Tabs, TabItem, Card, CardGrid } from '@astrojs/starlight/components';
+import { logos } from '../../../components/data/logos';
 
 Lean.x offers two types of packages - Basic and Standard. All businesses grow at a unique pace. Thus, we've designed our pricing structure to be compatible with businesses of all shapes and sizes, from fresh start-ups to booming mid-sizers to large enterprises.
 
@@ -25,24 +26,44 @@ See the descriptions below to have a better idea of which package perfectly alig
         </CardGrid>
 
         ### Payment Channels & Transaction Fee Rates
-        <CardGrid>
-            <Card title="Online Banking">
-                <img src='/finance/online_banking/FPX.svg' alt='FPX Logo' />
-                B2C: RM1.50 <br/>
-                B2B: RM2.00
-            </Card>
+        <Card title="Online Banking - RM1.50 (B2C) / RM2.00 (B2B)">
+            <div className='columns-4'>
+                {logos
+                .filter((logo) => 
+                logo.display_type === "DISPLAYED_ONLINEBANKING")
+                .map(logo => (
+                    <div class="">
+                        <img
+                            src={`https://lean.sgp1.cdn.digitaloceanspaces.com/assets/svg/${logo.unique_reference}.svg`}
+                            alt={logo.name}
+                            width="auto"
+                            height="auto"  
+                            class="object-contain" 
+                        />
+                    </div> 
+                ))}
+            </div>
+        </Card>
 
-            <Card title="E-wallets">
-                <div className='columns-5'>
-                    <img src='/finance/ewallets/TNG.svg' alt='TNG Ewallet Logo' />
-                    <img src='/finance/ewallets/Boost.svg' alt='Boost Logo' />
-                    <img src='/finance/ewallets/GrabPay.svg' alt='GrabPay Logo' />
-                    <img src='/finance/ewallets/ShopeePay.svg' alt='ShopeePay Logo' />
-                </div>
-                
-                RM1.70
-            </Card>
-        </CardGrid>
+        <Card title="E-wallets - RM1.70">
+            <div className='columns-5'>
+                {logos
+                .filter((logo) => 
+                logo.display_type === "DISPLAYED_EWALLET")
+                .map(logo => (
+                    <div class="">
+                        <img
+                            src={`https://lean.sgp1.cdn.digitaloceanspaces.com/assets/svg/${logo.unique_reference}.svg`}
+                            alt={logo.name}
+                            width="auto"
+                            height="auto"  
+                            class="object-contain" 
+                        />
+                    </div> 
+                ))}
+            </div>
+        </Card>
+        
 
         ### Settlements
         <CardGrid>
@@ -69,32 +90,63 @@ See the descriptions below to have a better idea of which package perfectly alig
         </CardGrid>
 
         ### Payment Channels & Transaction Fee Rates
-        <CardGrid>
-            <Card title="Online Banking">
-                <img src='/finance/online_banking/FPX.svg' alt='FPX Logo' />
-                B2C: RM1.50 <br/>
-                B2B: RM2.00
+            <Card title="Online Banking - RM1.50 (B2C) / RM2.00 (B2B)">
+                <div className='columns-4'>
+                    {logos
+                    .filter((logo) => 
+                    logo.display_type === "DISPLAYED_ONLINEBANKING")
+                    .map(logo => (
+                        <div class="">
+                            <img
+                                src={`https://lean.sgp1.cdn.digitaloceanspaces.com/assets/svg/${logo.unique_reference}.svg`}
+                                alt={logo.name}
+                                width="auto"
+                                height="auto"  
+                                class="object-contain" 
+                            />
+                        </div> 
+                    ))}
+                </div>
             </Card>
 
-            <Card title="E-wallets">
-                <div className='columns-5'>
-                    <img src='/finance/ewallets/TNG.svg' alt='TNG Ewallet Logo' />
-                    <img src='/finance/ewallets/Boost.svg' alt='Boost Logo' />
-                    <img src='/finance/ewallets/GrabPay.svg' alt='GrabPay Logo' />
-                    <img src='/finance/ewallets/ShopeePay.svg' alt='ShopeePay Logo' />
+            <Card title="E-wallets - RM1.70">
+                <div className='columns-4'>
+                    {logos
+                    .filter((logo) => 
+                    logo.display_type === "DISPLAYED_EWALLET")
+                    .map(logo => (
+                        <div>
+                            <img
+                                src={`https://lean.sgp1.cdn.digitaloceanspaces.com/assets/svg/${logo.unique_reference}.svg`}
+                                alt={logo.name}
+                                width="auto"
+                                height="auto"  
+                                class="object-contain" 
+                            />
+                        </div> 
+                    ))}
                 </div>
-                RM1.70
             </Card>
 
-            <Card title="Cards">
-                <div className='columns-3'>
-                    <img src='/finance/cards/Visa.svg' alt='Visa Logo' className='h-[50px] w-auto' />
-                    <img src='/finance/cards/Mastercard.svg' alt='Mastercard Logo' className='h-[40px] w-auto'  />
+            <Card title="Cards - 2.00%">
+                <div className='columns-4'>
+                    {logos
+                    .filter((logo) => 
+                    logo.display_type === "DISPLAYED_CARD")
+                    .map(logo => (
+                        <div>
+                            <img
+                                src={`https://lean.sgp1.cdn.digitaloceanspaces.com/assets/svg/${logo.unique_reference}.svg`}
+                                alt={logo.name}
+                                width="auto"
+                                height="auto"  
+                                class="object-contain" 
+                            />
+                        </div> 
+                    ))}
                 </div>
-                
-                2.00%
             </Card>
-        </CardGrid>
+
 
         ### Settlements
         <CardGrid>

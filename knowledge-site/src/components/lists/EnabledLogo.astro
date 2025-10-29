@@ -1,0 +1,68 @@
+---
+import { Copy } from 'lucide-astro';
+import { logos } from '../data/logos';
+---
+
+<div>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Unique Reference</th>
+            <th>Image</th>
+        </tr>
+        {logos
+        .filter((logo) => logo.status === "ENABLED")
+        .map(logo => (
+            <tr class="w-[100px] break-words whitespace-normal">
+                <td class="flex-wrap">{logo.name}</td>
+                <td>
+                    {logo.unique_reference}
+                    <span
+                        title="Click to copy"
+                        class="cursor-pointer copy-reference"
+                        data-reference={logo.unique_reference}
+                        data-type="en_unique_ref"
+                    >
+                        <Copy size={14} />
+                    </span>
+                </td>
+                <td>
+                    <img
+                        src={`https://lean.sgp1.cdn.digitaloceanspaces.com/assets/svg/${logo.unique_reference}.svg`}
+                        alt={logo.name}
+                        width="auto"
+                        height="auto"  
+                        title="Click to copy Image URL"
+                        class="object-contain cursor-pointer copy-reference" 
+                        data-reference={`https://lean.sgp1.cdn.digitaloceanspaces.com/assets/svg/${logo.unique_reference}.svg`}
+                        data-type="en_url"
+                    />
+                </td>
+            </tr>
+        ))}
+    </table>
+</div>
+
+<script>
+  document.querySelectorAll('.copy-reference').forEach(el => {
+    el.addEventListener('click', () => {
+      const reference = el.getAttribute('data-reference');
+      const type = el.getAttribute('data-type');
+
+      if (reference) {
+        navigator.clipboard.writeText(reference);
+
+        if (type === 'en_url') {
+          alert("Image URL copied to clipboard!");
+        } else if (type === 'en_unique_ref') {
+          alert("Unique reference copied to clipboard!");
+        }
+      }
+    });
+  });
+</script>
+
+
+
+
+

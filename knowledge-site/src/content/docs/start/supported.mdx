@@ -5,8 +5,9 @@ sidebar:
  order: 3
 ---
 import { Tabs, TabItem } from '@astrojs/starlight/components';
-import Banks from '../../../components/lists/Banks.astro';
-import Banks2 from '../../../components/lists/Banks2.astro';
+import BanksPayin from '../../../components/lists/BanksPayin.astro';
+import BanksSettlement from '../../../components/lists/BanksSettlement.astro';
+import BanksPayout from '../../../components/lists/BanksPayout.astro';
 import Cards from '../../../components/lists/Cards.astro';
 import Ewallets from '../../../components/lists/EWallets.astro';
 import { BRANDING, MESSAGES } from '../../../constants';
@@ -29,7 +30,7 @@ The only currency currently supported is the 🇲🇾 Malaysian Ringgit (MYR).
 Merchants are able to receive payments from customers via these payment channels.
 <Tabs>
     <TabItem label="FPX Online Banking">
-        <Banks />
+        <BanksPayin />
     </TabItem>
 
     <TabItem label="E-Wallets"> 
@@ -46,7 +47,7 @@ Merchants are able to receive payments from customers via these payment channels
 Merchants are able to receive settlements via these channels.
 <Tabs>
     <TabItem label="FPX Online Banking">
-        <Banks />
+        <BanksSettlement />
     </TabItem>
 
     <TabItem label="E-Wallets"> 
@@ -59,7 +60,7 @@ Merchants are able to disburse Payout funds to these payment channels.
 
 <Tabs>
     <TabItem label="FPX Online Banking">
-        <Banks2 />
+        <BanksPayout />
     </TabItem>
 
     <TabItem label="E-Wallets"> 

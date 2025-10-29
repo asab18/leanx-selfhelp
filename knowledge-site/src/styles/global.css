@@ -46,8 +46,4 @@
     .table {
         @apply max-w-full
     }
-
-    .rows {
-        @apply w-auto
-    }
 }
