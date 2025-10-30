@@ -1,12 +1,15 @@
 ---
 title: Frequently Asked Questions (FAQs)
 ---
-import { Steps } from '@astrojs/starlight/components';
+import { Steps, LinkButton } from '@astrojs/starlight/components';
+import { branding } from '../../components/data/branding';
+import { links } from '../../components/data/links';
 
-These are some of the most frequently asked questions about our products.
+These are some of the most frequently asked questions about our products. If you can't find what you&apos;re looking for, see the [contact page](/contact-us).
 
-## Onboarding & Account Issues
+## Merchants
 
+### New Merchants
 <details>
     <summary>How do I register as a new merchant?</summary>
     Complete your sign up through the Onboarding registration page [here](https://onboard.Lean.x.io/register) and upload your required documents. Refer to the [registration steps](/registration-steps/) for an in-depth step-by-step-guide during your registration.
@@ -29,6 +32,12 @@ These are some of the most frequently asked questions about our products.
     You will need to have a registered company (either Enterprise or Sdn. Bhd.) as we only make settlements to company bank accounts.
 </details> 
 
+<details>
+    <summary>Is there a monthly or annual maintenance fee?</summary>
+    There are no monthly or annual fees for both Lite and Growth package subscribers. To see more info on the fees and pricing, click [here](/packages).
+</details> 
+
+### Existing Merchants
 <details>
     <summary>How do I update my business or contact details?</summary>
     content
@@ -64,27 +73,45 @@ These are some of the most frequently asked questions about our products.
     :::
 </details> 
 
+## Transactions
 <details>
-    <summary>Is there a monthly or annual maintenance fee?</summary>
-    {/* TODO incomplete answer */}
-    Yes, we charge any monthly or annual maintenance fees.
+    <summary>Can my customers pay from their mobile devices?</summary>
+    Yes, your customers can make payments directly from their mobile devices.
 </details> 
 
 <details>
-    <summary></summary>
-    content
+    <summary>Why is my payment showing as “Pending”?</summary>
+    A payment may show as Pending because the transaction has not yet received confirmation from PayNet. Pending transactions usually require manual checking. The final status will be updated automatically within 1 hour.
 </details> 
 
+<details>
+    <summary>While making payment using FPX, I received an error or unsuccessful message. However money has been deducted. What should I do?</summary>
+    If the payment was unsuccessful but the amount was deducted, the transaction will usually be reversed automatically by your bank. Please allow up to 24&ndash;48 hours for the refund to reflect in your account. If the refund does not appear after this time, kindly contact your bank directly for further assistance.
+</details> 
+
+<details>
+    <summary>Can I accept international payments?</summary>
+    Yes, {branding.leanx} supports purchases and payments from customers outside Malaysia, as long as the transaction is made using a VISA or Mastercard.
+</details> 
+
+## Developer & Integration
+Click the button below to read the FAQ for Developers!
+<LinkButton 
+    href={links.apiDocsFaq}
+    target="_blank" 
+    icon="external" 
+    iconPlacement="start"
+> 
+    Developer FAQ
+</LinkButton>
 
 
-## Developer & Integration Issues
-
-## Transaction Issues
 
 
 
 
 
+{/* ------------- */}
 {/* FOR COPYING
 <details>
     <summary></summary>

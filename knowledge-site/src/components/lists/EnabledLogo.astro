@@ -13,8 +13,8 @@ import { logos } from '../data/logos';
         {logos
         .filter((logo) => logo.status === "ENABLED")
         .map(logo => (
-            <tr class="w-[100px] break-words whitespace-normal">
-                <td class="flex-wrap">{logo.name}</td>
+            <tr>
+                <td>{logo.name}</td>
                 <td>
                     {logo.unique_reference}
                     <span

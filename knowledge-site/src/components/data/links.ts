@@ -2,6 +2,7 @@ export const links = {
     leanis: "https://leanis.com.my/",
 
     apiDocs: "https://docs.leanx.io/api-docs/",
+    apiDocsFaq: "https://docs.leanx.io/api-docs/support/frequently-asked-question",
 
     cloudPayment: "https://leanx.io/cloud-payment",
     payout: "https://leanx.io/payout",
